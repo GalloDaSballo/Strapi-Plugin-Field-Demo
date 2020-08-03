@@ -7,7 +7,11 @@
     "icon": "plug",
     "description": "Description of replace-boolean plugin."
   },
-  "dependencies": {},
+  "dependencies": {
+    "@buffetjs/core": "^3.2.1",
+    "@buffetjs/hooks": "^3.2.1",
+    "@buffetjs/styles": "^3.2.1"
+  },
   "author": {
     "name": "A Strapi developer",
     "email": "",
