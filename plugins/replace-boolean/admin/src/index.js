@@ -1,3 +1,4 @@
+import React from 'react'
 import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
 import App from './containers/App';
@@ -47,6 +48,8 @@ export default strapi => {
       ],
     },
   };
+
+  strapi.registerField({type: 'bool', Component: () => <div>React Component</div>})
 
   return strapi.registerPlugin(plugin);
 };
