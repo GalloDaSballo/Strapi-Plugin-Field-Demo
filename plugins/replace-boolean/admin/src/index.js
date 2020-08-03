@@ -5,6 +5,7 @@ import App from './containers/App';
 import Initializer from './containers/Initializer';
 import lifecycles from './lifecycles';
 import trads from './translations';
+import Toggle from './components/Toggle'
 
 export default strapi => {
   const pluginDescription = pluginPkg.strapi.description || pluginPkg.description;
@@ -49,7 +50,7 @@ export default strapi => {
     },
   };
 
-  strapi.registerField({type: 'bool', Component: () => <div>React Component</div>})
+  strapi.registerField({type: 'bool', Component: Toggle})
 
   return strapi.registerPlugin(plugin);
 };
